@@ -18,6 +18,7 @@ function pageContact() {
   const btnContact = document.createElement("div");
   btnContact.classList.add("navbtn");
   btnContact.classList.add("contactbtn");
+  btnContact.classList.add("currentpage");
   btnContact.setAttribute("id", "contactbtn");
   btnContact.textContent = "Contact";
 

@@ -6,6 +6,7 @@ function pageLoad() {
   const btnHome = document.createElement("div");
   btnHome.classList.add("navbtn");
   btnHome.classList.add("homebtn");
+  btnHome.classList.add("currentpage");
   btnHome.setAttribute("id", "homebtn");
   btnHome.textContent = "Home";
 
@@ -53,6 +54,8 @@ function pageLoad() {
 
   reviewDiv.appendChild(reviewP);
 
+  const leftMiddle = document.createElement("div");
+
   const contentDiv = document.createElement("div");
   contentDiv.classList.add("middleContent");
 
@@ -69,17 +72,17 @@ function pageLoad() {
   //////////////////////////////
 
   // creating a new element which will serve as a container for the above strucutre (for easier styling)
-  const homePage = document.createElement("div");
-  homePage.classList.add("home");
-  homePage.classList.add("page");
+  const loadPage = document.createElement("div");
+  loadPage.classList.add("home");
+  loadPage.classList.add("page");
 
-  homePage.appendChild(buttons);
-  homePage.appendChild(contentDiv);
-  homePage.appendChild(footer);
+  loadPage.appendChild(buttons);
+  loadPage.appendChild(contentDiv);
+  loadPage.appendChild(footer);
 
   // appending the above created structure to the content div
   const element = document.getElementById("content");
-  element.appendChild(homePage);
+  element.appendChild(loadPage);
 }
 
 function clearPage() {

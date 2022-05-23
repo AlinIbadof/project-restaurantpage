@@ -6,6 +6,7 @@ function pageHome() {
   const btnHome = document.createElement("div");
   btnHome.classList.add("navbtn");
   btnHome.classList.add("homebtn");
+  btnHome.classList.add("currentpage");
   btnHome.setAttribute("id", "homebtn");
   btnHome.textContent = "Home";
 

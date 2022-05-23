@@ -12,6 +12,7 @@ function pageMenu() {
   const btnMenu = document.createElement("div");
   btnMenu.classList.add("navbtn");
   btnMenu.classList.add("menubtn");
+  btnMenu.classList.add("currentpage");
   btnMenu.setAttribute("id", "menubtn");
   btnMenu.textContent = "Menu";
 
