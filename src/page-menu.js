@@ -1,7 +1,6 @@
 import pageHome from "./page-home";
-import pageMenu from "./page-menu";
 
-function pageLoad() {
+function pageMenu() {
   // Navigation buttons
   const btnHome = document.createElement("div");
   btnHome.classList.add("navbtn");
@@ -28,17 +27,17 @@ function pageLoad() {
 
   // Content
   const title = document.createElement("div");
-  title.textContent = "Alin's restaurant";
+  title.textContent = "Alin's restaurant's Menu";
   title.classList.add("title");
 
-  const chefImage = document.createElement("img");
-  chefImage.src = "../src/chef.jpeg";
-  chefImage.classList.add("chefimg");
+  const foodImage = document.createElement("img");
+  foodImage.src = "../src/grilledcheese.jpg";
+  foodImage.classList.add("cheeseimg");
 
   const taglineDiv = document.createElement("div");
   taglineDiv.classList.add("tagline");
   const taglineP = document.createElement("p");
-  taglineP.textContent = "Life’s too short for boring food";
+  taglineP.textContent = "Griled cheese sandwich";
 
   taglineDiv.appendChild(taglineP);
 
@@ -46,7 +45,7 @@ function pageLoad() {
   reviewDiv.classList.add("review");
   const reviewP = document.createElement("p");
   reviewP.textContent =
-    "It's a great experience. The ambiance is very welcoming and charming. Amazing wines, food and service. Staff are extremely knowledgeable and make great recommendations.";
+    "It's all about the crust. Choose a hearty bread, butter it up, and shred your favorite cheddar for the best grilled cheese ever: crispy-crunchy on the outside, melty, cheddar middle, and the world's most impressive cheese pull.";
 
   reviewDiv.appendChild(reviewP);
 
@@ -54,7 +53,7 @@ function pageLoad() {
   contentDiv.classList.add("middleContent");
 
   contentDiv.appendChild(title);
-  contentDiv.appendChild(chefImage);
+  contentDiv.appendChild(foodImage);
   contentDiv.appendChild(taglineDiv);
   contentDiv.appendChild(reviewDiv);
   ///////////////////////////////
@@ -94,4 +93,4 @@ function clearPage() {
   element.removeChild(element.firstChild);
 }
 
-export default pageLoad;
+export default pageMenu;

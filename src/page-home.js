@@ -1,7 +1,6 @@
-import pageHome from "./page-home";
 import pageMenu from "./page-menu";
 
-function pageLoad() {
+function pageHome() {
   // Navigation buttons
   const btnHome = document.createElement("div");
   btnHome.classList.add("navbtn");
@@ -94,4 +93,4 @@ function clearPage() {
   element.removeChild(element.firstChild);
 }
 
-export default pageLoad;
+export default pageHome;
