@@ -26,6 +26,7 @@ body {
 .middleContent {
   text-align: center;
   padding: 2vh;
+  width: 50vw;
 }
 
 .footer {
