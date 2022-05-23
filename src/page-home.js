@@ -6,16 +6,19 @@ function pageHome() {
   const btnHome = document.createElement("div");
   btnHome.classList.add("navbtn");
   btnHome.classList.add("homebtn");
+  btnHome.setAttribute("id", "homebtn");
   btnHome.textContent = "Home";
 
   const btnMenu = document.createElement("div");
   btnMenu.classList.add("navbtn");
   btnMenu.classList.add("menubtn");
+  btnMenu.setAttribute("id", "menubtn");
   btnMenu.textContent = "Menu";
 
   const btnContact = document.createElement("div");
   btnContact.classList.add("navbtn");
   btnContact.classList.add("contactbtn");
+  btnContact.setAttribute("id", "contactbtn");
   btnContact.textContent = "Contact";
 
   const buttons = document.createElement("div");
@@ -77,16 +80,6 @@ function pageHome() {
   // appending the above created structure to the content div
   const element = document.getElementById("content");
   element.appendChild(homePage);
-
-  btnContact.addEventListener("click", () => {
-    clearPage();
-    pageContact();
-  });
-
-  btnMenu.addEventListener("click", () => {
-    clearPage();
-    pageMenu();
-  });
 }
 
 function clearPage() {
