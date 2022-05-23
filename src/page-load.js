@@ -1,5 +1,5 @@
-import pageHome from "./page-home";
 import pageMenu from "./page-menu";
+import pageContact from "./page-contact";
 
 function pageLoad() {
   // Navigation buttons
@@ -78,14 +78,14 @@ function pageLoad() {
   const element = document.getElementById("content");
   element.appendChild(homePage);
 
-  btnHome.addEventListener("click", () => {
-    clearPage();
-    pageHome();
-  });
-
   btnMenu.addEventListener("click", () => {
     clearPage();
     pageMenu();
+  });
+
+  btnContact.addEventListener("click", () => {
+    clearPage();
+    pageContact();
   });
 }
 

@@ -1,4 +1,5 @@
 import pageMenu from "./page-menu";
+import pageContact from "./page-contact";
 
 function pageHome() {
   // Navigation buttons
@@ -25,7 +26,7 @@ function pageHome() {
   buttons.appendChild(btnContact);
   ////////////////////////////
 
-  // Content
+  // Content ---------------------------------------------------
   const title = document.createElement("div");
   title.textContent = "Alin's restaurant";
   title.classList.add("title");
@@ -58,7 +59,7 @@ function pageHome() {
   contentDiv.appendChild(reviewDiv);
   ///////////////////////////////
 
-  // Footer section
+  // Footer section ---------------------------------------------------
   const footer = document.createElement("div");
   footer.classList.add("footer");
   footer.textContent = "@ Alin Ibadof";
@@ -77,9 +78,9 @@ function pageHome() {
   const element = document.getElementById("content");
   element.appendChild(homePage);
 
-  btnHome.addEventListener("click", () => {
+  btnContact.addEventListener("click", () => {
     clearPage();
-    pageHome();
+    pageContact();
   });
 
   btnMenu.addEventListener("click", () => {

@@ -1,4 +1,5 @@
 import pageHome from "./page-home";
+import pageContact from "./page-contact";
 
 function pageMenu() {
   // Navigation buttons
@@ -25,7 +26,7 @@ function pageMenu() {
   buttons.appendChild(btnContact);
   ////////////////////////////
 
-  // Content
+  // Content ---------------------------------------------------
   const title = document.createElement("div");
   title.textContent = "Alin's restaurant's Menu";
   title.classList.add("title");
@@ -58,33 +59,33 @@ function pageMenu() {
   contentDiv.appendChild(reviewDiv);
   ///////////////////////////////
 
-  // Footer section
+  // Footer section ---------------------------------------------------
   const footer = document.createElement("div");
   footer.classList.add("footer");
   footer.textContent = "@ Alin Ibadof";
   //////////////////////////////
 
   // creating a new element which will serve as a container for the above strucutre (for easier styling)
-  const homePage = document.createElement("div");
-  homePage.classList.add("home");
-  homePage.classList.add("page");
+  const menuPage = document.createElement("div");
+  menuPage.classList.add("menu");
+  menuPage.classList.add("page");
 
-  homePage.appendChild(buttons);
-  homePage.appendChild(contentDiv);
-  homePage.appendChild(footer);
+  menuPage.appendChild(buttons);
+  menuPage.appendChild(contentDiv);
+  menuPage.appendChild(footer);
 
   // appending the above created structure to the content div
   const element = document.getElementById("content");
-  element.appendChild(homePage);
+  element.appendChild(menuPage);
 
   btnHome.addEventListener("click", () => {
     clearPage();
     pageHome();
   });
 
-  btnMenu.addEventListener("click", () => {
+  btnContact.addEventListener("click", () => {
     clearPage();
-    pageMenu();
+    pageContact();
   });
 }
 

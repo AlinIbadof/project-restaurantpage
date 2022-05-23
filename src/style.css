@@ -32,3 +32,8 @@ body {
   display: grid;
   align-items: center;
 }
+
+.restaurantimg {
+  height: 40vh;
+  width: 40vw;
+}
